@@ -11,7 +11,7 @@
 
 		if($errMsg == '') {
 			try{
-				$stmt = $connect->prepare('DELETE FROM pdo WHERE id = :id OR username = :username LIMIT 1');
+				$stmt = $connect->prepare('DELETE FROM test WHERE id = :id OR username = :username LIMIT 1');
 				$stmt->execute(array(
 					':id' => $usernameid,
 					':username' => $usernameid
