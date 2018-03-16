@@ -12,7 +12,7 @@
 
 		if($errMsg == '') {
 			try {
-				$stmt = $connect->prepare('SELECT password, secretpin FROM pdo WHERE secretpin = :secretpin');
+				$stmt = $connect->prepare('SELECT password, secretpin FROM test WHERE secretpin = :secretpin');
 				$stmt->execute(array(
 					':secretpin' => $secretpin
 					));
