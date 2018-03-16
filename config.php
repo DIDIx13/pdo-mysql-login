@@ -3,8 +3,8 @@ session_start();
 
 // Define database
 define('dbhost', 'localhost');
-define('dbuser', 'obydul');
-define('dbpass', '123456');
+define('dbuser', 'root');
+define('dbpass', '');
 define('dbname', 'test');
 
 // Connecting database
