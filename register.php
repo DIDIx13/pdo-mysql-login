@@ -21,7 +21,7 @@
 
 		if($errMsg == ''){
 			try {
-				$stmt = $connect->prepare('INSERT INTO pdo (fullname, username, password, secretpin) VALUES (:fullname, :username, :password, :secretpin)');
+				$stmt = $connect->prepare('INSERT INTO test (fullname, username, password, secretpin) VALUES (:fullname, :username, :password, :secretpin)');
 				$stmt->execute(array(
 					':fullname' => $fullname,
 					':username' => $username,
