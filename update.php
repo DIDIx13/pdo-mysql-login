@@ -17,8 +17,8 @@
 
 		if($errMsg == '') {
 			try {
-		      $sql = "UPDATE pdo SET fullname = :fullname, password = :password, secretpin = :secretpin WHERE username = :username";
-		      $stmt = $connect->prepare($sql);                                  
+		      $sql = "UPDATE test SET fullname = :fullname, password = :password, secretpin = :secretpin WHERE username = :username";
+		      $stmt = $connect->prepare($sql);
 		      $stmt->execute(array(
 		        ':fullname' => $fullname,
 		        ':secretpin' => $secretpin,
